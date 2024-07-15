@@ -20,7 +20,7 @@ variable "z" {
 
 # values numbers and booleans need not to be quoted
 # list variable
-variable "1" {
+variable "I" {
     default = [10,20, "abc", false]
     }
 # values in lsit need not to be same data type
@@ -37,6 +37,6 @@ output "x1" {
     value = "value of x - ${var.x}"
 }
 
-output "1" {
+output "I" {
     value = var.1[0]
 }
