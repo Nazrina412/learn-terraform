@@ -26,6 +26,14 @@ resource "aws_instance" "mongo" {
   }
 }
 
+resource "aws_route53_record" "mongo" {
+  zone_id = "Z03416193I6UORBOGZ0Y"
+  name    = "mongo.dev.naifah.online"
+  type    = "A"
+  ttl     = 15
+  records = [aws_instance.frontend.private_ip]
+}
+
 resource "aws_instance" "catalogue" {
   ami           = "ami-041e2ea9402c46c32"
   instance_type = "t3.small"
@@ -34,4 +42,12 @@ resource "aws_instance" "catalogue" {
   tags = {
     Name = "catalogue.dev"
   }
+}
+
+resource "aws_route53_record" "catalogue" {
+  zone_id = "Z03416193I6UORBOGZ0Y"
+  name    = "catalogue.dev.naifah.online"
+  type    = "A"
+  ttl     = 15
+  records = [aws_instance.frontend.private_ip]
 }
