@@ -39,5 +39,4 @@ output "x1" {
 
 output "1" {
     value = var.1[0]
-
 }
