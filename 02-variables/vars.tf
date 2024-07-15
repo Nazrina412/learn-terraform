@@ -1,13 +1,10 @@
 variable "x" {
-default = 10
-
+    default = 10
 }
 
 
 
 #outputs
 output "x" {
-   value = var.x
-
-
+    value = var.x
 }
