@@ -25,6 +25,15 @@ variable "I" {
     }
 # values in lsit need not to be same data type
 
+#Map variable
+variable "m" {
+    default = {
+     course = "Devops"
+     trainer = "john"
+
+     }
+}
+
 #outputs
 #direct valude does not required to be accessed with ${}
 
@@ -39,4 +48,8 @@ output "x1" {
 
 output "I" {
     value = var.I[0]
+}
+
+output "m" {
+    value = "course Name - ${var.m["course"]} , Trainer Name - ${var.m["trainer"]}"
 }
