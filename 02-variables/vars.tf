@@ -29,5 +29,4 @@ output "x" {
 #accessing variables has a combination with a string we need to refer variable with $
 output "x1" {
     value = "value of x - ${var.x}"
-
 }
