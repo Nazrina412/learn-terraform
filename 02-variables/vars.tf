@@ -11,7 +11,7 @@ variable "y" {
 }
 
 #string
-varibale "z" {
+variable "z" {
     default = "Hello"
 }
 
