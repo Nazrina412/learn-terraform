@@ -54,4 +54,5 @@ output "m" {
     value = "course Name - ${var.m["course"]} , Trainer Name - ${var.m["trainer"]}"
 }
 
+##
 variable "c" {}
