@@ -38,5 +38,5 @@ output "x1" {
 }
 
 output "I" {
-    value = var.1[0]
+    value = var.I[0]
 }
