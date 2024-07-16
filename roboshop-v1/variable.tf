@@ -17,6 +17,6 @@ variable "domain_name" {
 
 }
 
-variable "vpc_security_group_ids" {
+variable "security_group_ids" {
     default = ["sg-0a0ad57f3e45d4556"]
 }
