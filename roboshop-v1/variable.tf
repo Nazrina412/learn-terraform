@@ -12,7 +12,7 @@ variable "zone_id" {
 }
 
 
-varibale "domain_name" {
+variable "domain_name" {
     default = "naifah.online"
 
 }
