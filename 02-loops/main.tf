@@ -2,7 +2,7 @@ resource "null_resource" "fruits" {
     for_each = var.fruits
  }
 
-    variable = "fruits" {
+    variable  "fruits" {
      default = {
        apple = {
         name = "apple"
