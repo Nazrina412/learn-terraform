@@ -28,7 +28,7 @@ resource "aws_instance" "mongo" {
 }
 
 resource "aws_route53_record" "mongo" {
-  zone_id = data.aws_route53_zone.zone.zone.id
+  zone_id = data.aws_route53_zone.zone.zone_id
   name    = "mongo.dev.(var.domain_name)"
   type    = "A"
   ttl     = 15
