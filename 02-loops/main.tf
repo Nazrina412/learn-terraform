@@ -15,3 +15,18 @@ resource "null_resource" "fruits" {
        }
 
 }
+
+resource "null_resource" "instances"{
+    for_each = var.instances
+    }
+
+variable "instances" {
+    default = {
+        frontend = {}
+        catalogue = {}
+        mongo = {}
+        redis = {}
+
+        }
+
+    }
