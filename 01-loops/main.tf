@@ -8,5 +8,5 @@ variable "component" {
 }
 
 resource "null_resource" "test1" {
-    count = length(var.components)
+    count = length(var.component)
 }
