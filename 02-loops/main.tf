@@ -1,6 +1,7 @@
 resource "null_resource" "fruits" {
     for_each = var.fruits
  }
+
     variable = "fruits" {
      default = {
        apple = {
