@@ -1,6 +1,3 @@
-
-
-module "example" {
-    source ="./example"
-
+resource "null_resource" "test" {
+    count = var.input
     }
