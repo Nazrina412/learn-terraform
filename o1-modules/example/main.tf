@@ -1,4 +1,6 @@
+
+
 module "example" {
-    source = "./example"
-    input = 3
+    source ="./example"
+
     }
