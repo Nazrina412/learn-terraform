@@ -3,7 +3,7 @@ resource "aws_route53_record" "mongo" {
   name    = "test.naifah.online"
   type    = "A"
   ttl     = 15
-  records = [var..private_ip]
+  records = [var.private_ip]
 }
 
 variable "private_ip" {}
