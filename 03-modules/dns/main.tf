@@ -6,4 +6,4 @@ resource "aws_route53_record" "mongo" {
   records = [var..private_ip]
 }
 
-varaiable "privat_ip" {}
+variable "private_ip" {}
