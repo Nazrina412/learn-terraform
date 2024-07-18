@@ -16,10 +16,10 @@ variable "components" {
       frontend = {
           instance_type = "t3.micro"
       }
-      catalogue = {
+      mongo = {
           instance_type = "t3.micro"
           }
-       mongo = {
+       catalogue = {
         instance_type = "t3.small"
         }
     }
