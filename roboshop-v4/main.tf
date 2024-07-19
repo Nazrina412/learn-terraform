@@ -14,7 +14,7 @@ resource "aws_instance" "instance" {
 resource "aws_route53_record" "dns_record" {
 
   for_each = var.components
-  zone_id = data.aws_route53_zone.zone.zone_id
+  zone_id = Z03416193I6UORBOGZ0Y
   name    = "${each.key}.dev.${var.domain_name}"
   type    = "A"
   ttl     = 15
